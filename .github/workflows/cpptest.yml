@@ -2,7 +2,7 @@ name: C++ Test
 
 on: 
   schedule:
-    - cron:  '*/5 * * * *'
+    - cron:  '20 2 * * *'
 
 jobs:
   build:
