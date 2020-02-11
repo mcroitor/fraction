@@ -6,11 +6,13 @@ on:
       - dev
 
 jobs:
-  build:
+  build_branch:
 
     runs-on: ubuntu-latest
     
     steps:
     - uses: actions/checkout@v2
-    - name: build
+    - name: branch name
+      run: echo running on branch ${GITHUB_REF##*/}
+    - name: build app
       run: make
