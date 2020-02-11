@@ -1,6 +1,9 @@
 name: C++ build
 
-on: [push]
+on: 
+  push:
+    branches:
+      - dev
 
 jobs:
   build:
