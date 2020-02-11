@@ -18,7 +18,4 @@ jobs:
       run: make
     - name: test app
       run: make && make test
-    - name: rebase test
-      run: |
-          git checkout test
-          git merge dev
+
