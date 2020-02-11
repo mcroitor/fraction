@@ -17,5 +17,5 @@ jobs:
     - name: build app
       run: make
     - name: test app
-      run: make test
+      run: make && make test
 
