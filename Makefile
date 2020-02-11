@@ -4,7 +4,7 @@ DEBUG = # -g -Wall
 CXXFLAGS = -O2 -std=c++14 $(DEBUG)
 CFLAGS = -O2 $(DEBUG)
 ARFLAGS = rcs
-LDFLAGS = -lstdc++
+LDFLAGS = -lstdc++ -lm
 OUT = libfraction.a
 OBJDIR = obj
 BUILDDIR = build
