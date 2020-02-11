@@ -3,13 +3,22 @@ name: C++ Test
 on: 
   schedule:
     - cron:  '20 2 * * *'
+  build:
+    branches:
+      - dev
 
 jobs:
-  build:
+  test_app:
 
     runs-on: ubuntu-latest
     
     steps:
     - uses: actions/checkout@v2
-    - name: test
+      with:
+          ref: test
+    - name: branch name
+      run: echo running on branch ${GITHUB_REF##*/}
+    - name: rebase
+      run: git rebase dev
+    - name: test library
       run: make test

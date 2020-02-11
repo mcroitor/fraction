@@ -6,7 +6,7 @@ on:
       - dev
 
 jobs:
-  build_branch:
+  build_app:
 
     runs-on: ubuntu-latest
     
