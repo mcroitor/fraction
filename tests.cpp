@@ -1,6 +1,6 @@
 #define CATCH_CONFIG_MAIN
 
-#include <catch.hpp>
+#include "catch.hpp"
 #include "fraction.h"
 
 TEST_CASE("constructor 1", "[fraction]") {

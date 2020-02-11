@@ -14,9 +14,11 @@ all: directories $(OUT)
 directories: $(OBJDIR) $(BUILDDIR)
 
 test: $(OUT)
+	wget https://github.com/catchorg/Catch2/releases/download/v2.11.1/catch.hpp -O catch.hpp
 	$(CC) -c tests.cpp $(CXXFLAGS) -o $(OBJDIR)\tests.o
 	$(CC) $(OBJDIR)/tests.o $(OBJDIR)/fraction.o -o $(BUILDDIR)/tests $(LDFLAGS)
 	$(BUILDDIR)/tests
+	rm catch.hpp
 
 $(OBJDIR):
 	mkdir -p $(OBJDIR)
