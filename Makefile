@@ -13,6 +13,10 @@ all: directories $(OUT)
 
 directories: $(OBJDIR) $(BUILDDIR)
 
+clean:
+	rm -r $(OBJDIR)
+	rm -r $(BUILDDIR)
+
 test: $(OUT)
 	wget https://github.com/catchorg/Catch2/releases/download/v2.11.1/catch.hpp -O catch.hpp
 	$(CC) -c tests.cpp $(CXXFLAGS) -o $(OBJDIR)\tests.o
