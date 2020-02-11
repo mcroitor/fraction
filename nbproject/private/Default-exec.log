@@ -1,0 +1,10 @@
+called: D:\WORK\msys64\mingw64\bin\gcc.exe
+	D:\Documents\NetBeansProjects\mclib\fraction
+	D:\WORK\msys64\mingw64\bin\gcc.exe
+	-c
+	fraction.cpp
+	-O2
+	-std=c++14
+	-o
+	obj/fraction.o
+
