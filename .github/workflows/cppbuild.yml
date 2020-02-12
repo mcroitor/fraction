@@ -19,7 +19,7 @@ jobs:
     - name: test app
       run: make test
     - name: create pull request
-	- if: success()
+	  if: success()
 	  uses: peter-evans/create-pull-request@v2
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
