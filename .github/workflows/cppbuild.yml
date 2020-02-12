@@ -19,9 +19,9 @@ jobs:
     - name: test app
       run: make test
     - name: create pull request
-	  if: success()
-	  uses: peter-evans/create-pull-request@v2
+      if: success()
+      uses: peter-evans/create-pull-request@v2
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
-		branch: master
+        branch: master
 
