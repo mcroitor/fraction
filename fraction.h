@@ -14,7 +14,7 @@ namespace mc {
     public:
         const static double EPS;
 
-        fraction();
+        fraction() = default;
         fraction(const fraction&);
         fraction(const long long, const long long);
         fraction(const double);
